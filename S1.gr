@@ -8,15 +8,28 @@
 
 1   S1   NP VP
 1   S1   NP _VP
-1   _VP  VP Punc
+1   S1   Do S1
+1   S1   Does S1
+1   S1   WhPro S1
+1   S1   WhAdv S1
+1   S1   VP S1
+1   _VP  VP End
 
 1   VP   VerbT NP
 1   VP   VerbT Adj
+1   VP   VBase
+1   VP   VBase VP
+1   VP   Pronoun VBase
+1   VP   VBase NP
+1   VP   VPresentPl PP
+1   VP   VPresentPl VP
+1   VP   Pronoun VPresentP
 
 20  NP   Det Nbar
 20  NP   Nbar
 
 10  Nbar Noun
+10  Nbar NounPl
 10  Nbar NounProp
 10  Nbar VPresentP
 10  Nbar VPresentP PP
