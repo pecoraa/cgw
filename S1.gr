@@ -11,14 +11,23 @@
 1   _VP  VP Punc
 
 1   VP   VerbT NP
+1   VP   VerbT Adj
 
 20  NP   Det Nbar
-1   NP   Proper
+20  NP   Nbar
 
 10  Nbar Noun
+10  Nbar NounProp
+10  Nbar VPresentP
+10  Nbar VPresentP PP
+1   Nbar Proper
+1   Nbar Det ProperPl
+1   Nbar Det Noun
+1   Nbar WhDet Noun
 1   Nbar Nbar PP
 
-1   PP   Prep NP
 
+1   PP   Prep NP
+1   PP   To NP
 # in case you use S1.gr by itself
 1   S2   Misc
