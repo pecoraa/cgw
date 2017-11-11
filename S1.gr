@@ -6,24 +6,33 @@
 
 # This is a very, very, very simple grammar to get you started.
 
-1   S1   NP VP
-1   S1   NP _VP
+40   S1   NP VP
+40   S1   NP _VP
 1   S1   Do S1
 1   S1   Does S1
 1   S1   WhPro S1
 1   S1   WhAdv S1
 1   S1   VP S1
+1   S1   CConj S1
 1   _VP  VP End
 
-1   VP   VerbT NP
-1   VP   VerbT Adj
-1   VP   VBase
-1   VP   VBase VP
-1   VP   Pronoun VBase
-1   VP   VBase NP
-1   VP   VPresentPl PP
-1   VP   VPresentPl VP
-1   VP   Pronoun VPresentP
+
+34   VP   VerbT NP
+56   VP   VerbT Adj
+12   VP   VBase
+13   VP   VBase VP
+40   VP   Pronoun VP
+89   VP   VBase NP
+21   VP   VPresentPl PP
+32   VP   VPresentPl VP
+14   VP   VPresentP
+24   VP   Modal VP
+14   VP   VPastP
+17   VP   VerbT
+11   VP   VPresentSg 
+39   VP   WhPro VP
+19   VP   Does
+9   VP   VP S1
 
 20  NP   Det Nbar
 20  NP   Nbar
@@ -34,10 +43,12 @@
 10  Nbar VPresentP
 10  Nbar VPresentP PP
 1   Nbar Proper
+1   Nbar Proper S1
 1   Nbar Det ProperPl
 1   Nbar Det Noun
 1   Nbar WhDet Noun
 1   Nbar Nbar PP
+1   Nbar Num Nbar
 
 
 1   PP   Prep NP
